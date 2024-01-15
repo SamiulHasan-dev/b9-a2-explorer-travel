@@ -5,104 +5,62 @@
 
 /* Shared Style */
 
-span{
+span {
     color: #FF5400;
 }
 
 /* Header Style */
 
-/* nav{
-    max-width: 1240px;
-    padding: 50px 0;
-    border: 1px solid tomato;
-    margin: 0 auto;
-}
 
-.nav-container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-}
-
-
-
-.nav-content1{
-    display: flex;
-    border: 1px solid tomato;
-    gap: 10px;
-    align-items: center;
-}
-
-
-
-.nav-content1 img{
-    width: 70px;
-    height: 60px;
-}
-
-
-.nav-content2 ul{
-    display: flex;
-    list-style: none;
-    gap: 40px;
-    border: 1px solid tomato;
-}
-
-.nav-content2 ul a{
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #424247;
-} */
-
-nav{
+nav {
     max-width: 1240px;
     padding: 50px 0;
     /* border: 1px solid tomato; */
     margin: 0 auto;
 }
 
-.nav-container{
+.nav-container {
     width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
-.nav-content1{
+.nav-content1 {
     width: 50%;
     /* border: 1px solid tomato; */
     display: flex;
-    
+    align-items: center;
+
 }
 
-.nav-content1 .nav-title{
-    color:  #131318;
+.nav-content1 .nav-title {
+    color: #131318;
     font-weight: 800;
+    font-size: 1.6rem;
     padding-left: 15px;
 }
 
-.nav-content1 img{
+.nav-content1 img {
     width: 70px;
     height: 60px;
 }
 
-.nav-content2{
+.nav-content2 {
     width: 50%;
     /* border: 1px solid seagreen; */
 }
 
-.nav-content2 ul{
+.nav-content2 ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    
+
 }
 
-.nav-content2 ul a{
+.nav-content2 ul a {
     text-decoration: none;
     font-size: 1.0rem;
     font-weight: 400;
@@ -110,6 +68,144 @@ nav{
     padding: 5px;
 }
 
-.nav-content2 ul span{
+.nav-content2 ul span {
     font-weight: 700;
+}
+
+/* Main Section */
+
+main {
+    max-width: 1240px;
+    padding: 50px 0;
+    border: 1px solid tomato;
+    margin: 0 auto;
+}
+
+/* Banner Section */
+
+section {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid seagreen;
+}
+
+
+.banner {
+    background-image: url('../Images/Group13.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 440px; */
+    margin-top: 0;
+    border-radius: 16px;
+}
+
+.banner-content {
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    text-align: center;
+    /* height: 100%; */
+    padding: 100px;
+}
+
+.from-content {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 20px 0;
+    /* gap: 30px; */
+    border: 0;
+
+    display:inline-flex;
+}
+
+.from-content input {
+    padding: 10px;
+    border-radius: 8px;
+    background: #FFF;
+    border: 0;
+    margin: 0 10px;
+    width: 120px;
+}
+
+.from-content select {
+    padding: 10px;
+    border-radius: 8px;
+    background: #FFF;
+    border: 0;
+    margin: 0 10px;
+    width: 140px;
+}
+
+.from-content button {
+    padding: 10px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    border: 0;
+    margin: 0 10px;
+    width: 140px;
+}
+
+.banner-title {
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.banner-description {
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+/* Responsive Style */
+
+@media screen and (max-width:576px) {
+    .nav-container, 
+    .from-content {
+        flex-direction: column;
+       
+    }
+
+    .from-content{
+        align-items: center;
+        gap: 30px;
+    }
+
+    .nav-content1{
+        width: 100%;
+       
+       
+    }
+    .nav-content2 {
+        width: 100%;
+       
+        
+    }
+    
+    .nav-content2 ul{
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .banner-title {
+        color: #FFF;
+        font-size: 1.8rem;
+        font-weight: 800;
+    }
+    .banner-description {
+        color: #FFF;
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
 }
