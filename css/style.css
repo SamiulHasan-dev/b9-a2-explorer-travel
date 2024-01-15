@@ -9,6 +9,22 @@ span {
     color: #FF5400;
 }
 
+.btn-primary {
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    padding: 14px 30px;
+    border: 0;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+section {
+    width: 90%;
+    margin: 0 auto 100px auto;
+    border: 1px solid seagreen;
+}
+
 /* Header Style */
 
 
@@ -77,17 +93,13 @@ nav {
 main {
     max-width: 1240px;
     padding: 50px 0;
-    border: 1px solid tomato;
+    /* border: 1px solid tomato; */
     margin: 0 auto;
 }
 
 /* Banner Section */
 
-section {
-    width: 90%;
-    margin: 0 auto;
-    border: 1px solid seagreen;
-}
+
 
 
 .banner {
@@ -112,10 +124,8 @@ section {
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
     padding: 20px 0;
-    /* gap: 30px; */
     border: 0;
-
-    display:inline-flex;
+    display: inline-flex;
 }
 
 .from-content input {
@@ -141,6 +151,7 @@ section {
     border-radius: 8px;
     background: #FF5400;
     color: #FFF;
+    font-weight: 700;
     border: 0;
     margin: 0 10px;
     width: 140px;
@@ -159,6 +170,42 @@ section {
     font-weight: 400;
 }
 
+/* Popular Section */
+
+.popular-section {
+    display: flex;
+    gap: 50px;
+}
+
+
+.popular-title {
+    color: #131318;
+    font-size: 2.3rem;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.popular-description {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 15px 0 30px 0;
+}
+
+
+
+.popular-content li {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 15px 0 30px 5px;
+}
+
+
+
 
 
 
@@ -167,30 +214,34 @@ section {
 
 /* Responsive Style */
 
-@media screen and (max-width:576px) {
-    .nav-container, 
-    .from-content {
+@media screen and (max-width:600px) {
+
+    .nav-container,
+    .from-content,
+    .popular-section {
         flex-direction: column;
-       
+
     }
 
-    .from-content{
+    .from-content {
         align-items: center;
         gap: 30px;
     }
 
-    .nav-content1{
+    .nav-content1 {
         width: 100%;
-       
-       
+        justify-content: center;
+
+
     }
+
     .nav-content2 {
         width: 100%;
-       
-        
+
+
     }
-    
-    .nav-content2 ul{
+
+    .nav-content2 ul {
         flex-direction: column;
         gap: 30px;
         margin-bottom: 20px;
@@ -202,10 +253,15 @@ section {
         font-size: 1.8rem;
         font-weight: 800;
     }
+
     .banner-description {
         color: #FFF;
         text-align: center;
         font-size: 0.8rem;
         font-weight: 400;
+    }
+
+    .popular-img img{
+        width: 100%;
     }
 }
