@@ -22,7 +22,7 @@ span {
 section {
     width: 90%;
     margin: 0 auto 100px auto;
-    border: 1px solid seagreen;
+    /* border: 1px solid seagreen; */
 }
 
 /* Header Style */
@@ -239,7 +239,7 @@ main {
     height: 100%;
 }
 
-.row-img{
+/* .row-img{
     
 }
 .text{
@@ -247,7 +247,7 @@ main {
     left: 50px;
     color: #FF5400;
     font-weight: 800;
-}
+} */
 
 
 /* Choose Section Style */
@@ -276,7 +276,7 @@ main {
 .choose-box {
     display: flex;
     gap: 25px;
-    
+
 }
 
 .choose-box1 {
@@ -293,30 +293,85 @@ main {
     padding: 30px;
 }
 
-.choose-box img{
+.choose-box img {
     width: 60px;
     height: 60px;
 }
 
-.box-title{
-    color: #131318;;
-font-size: 1.2rem;
-font-weight: 800;
+.box-title {
+    color: #131318;
+    ;
+    font-size: 1.2rem;
+    font-weight: 800;
 }
 
-.box-description{
+.box-description {
     color: #5A5A5D;
-font-size: 0.8rem;
-font-weight: 400;
-line-height: 24px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 24px;
 }
 
-.choose-box-ex{
+.choose-box-ex {
     width: 50%;
     margin: 0 auto;
     margin-top: 25px;
 }
 
+/* NewsLatter Section Style */
+
+.newsletter-section {
+    display: flex;
+    /* justify-content: center; */
+    gap: 30px;
+}
+
+.newsletter-box {
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+
+
+.news-title {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.news-description {
+    color: #5A5A5D;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 26px
+}
+
+.news-form {
+    padding: 20px 0;
+}
+
+hr{
+    margin: 10px 30px;
+}
+
+.news-form input {
+    padding: 15px 140px 15px 20px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+    margin-bottom: 20px;
+}
+
+.news-form button {
+    padding: 15px 118px 15px 118px;
+    text-align: center;
+}
+
+
+.newsletter-img img {
+    width: 100%;
+    height: 100%;
+}
 
 
 
@@ -333,7 +388,9 @@ line-height: 24px;
     .from-content,
     .popular-section,
     .choose-box,
-    .row {
+    .row,
+    .newsletter-section
+    {
         flex-direction: column;
 
     }
@@ -379,11 +436,28 @@ line-height: 24px;
     .popular-img img {
         width: 100%;
     }
-    .place-content img{
+
+    .place-content img {
         width: 335px;
         height: 176px;
     }
-    .choose-box-ex{
+
+    .choose-box-ex {
         width: 100%;
     }
+
+    .newsletter-box{
+        text-align: center;
+    }
+   
+
+    .news-form input {
+        padding: 15px 85px 15px 20px;
+    }
+    
+    .news-form button {
+        padding: 15px 90px 15px 90px;
+    }
+
+    
 }
