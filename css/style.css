@@ -90,6 +90,10 @@ nav {
     font-weight: 700;
 }
 
+.frame{
+    display: none;
+}
+
 /* Main Section */
 
 main {
@@ -482,7 +486,7 @@ small {
 
 @media screen and (max-width:600px) {
 
-    .nav-container,
+    
     .from-content,
     .popular-section,
     .choose-box,
@@ -490,6 +494,26 @@ small {
     .newsletter-section {
         flex-direction: column;
 
+    }
+
+    .nav-container{
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .frame{
+        display: block;
+        margin-top: 24px;
+        
+    }
+    .frame img{
+        width: 70px;
+        height: 60px;
+    }
+
+    .menu-bar{
+        display: none;
     }
 
     .from-content {
