@@ -1,5 +1,7 @@
 * {
     font-family: 'Mulish', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -392,8 +394,8 @@ hr {
     font-size: 1rem;
     font-weight: 400;
     margin-bottom: 0;
-    
-  
+
+
 }
 
 .news-offer h3 {
@@ -401,27 +403,70 @@ hr {
     font-size: 1.8rem;
     font-weight: 800;
     margin-top: 0;
-    
+
 }
 
 
 
 /* Footer Section */
 
-.footer-section{
-    width: 90%;
-    margin: 0 auto 100px auto;
+
+.footer-section {
     text-align: center;
+    /* border: 1px solid tomato; */
+    padding: 90px 0;
+    background: rgba(19, 19, 24, 0.05);
 }
-.footer-content{
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-content img{
+    width: 70px;
+    height: 60px;
+}
+
+.footer-title{
+    color: #131318;
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+
+.footer-description {
+    color: #5A5A5D;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 10px;
+    padding: 10px 220px;
+    /* border: 1px solid blueviolet; */
+}
+
+.line{
+    margin: 25px 250px;
+}
+
+.footer-social {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.footer-description{
-    padding: 10px 200px;
+.footer-social a{
+    color: #131318;
 }
+
+small{
+color: #131318;
+font-size: 1rem;
+font-weight: 300;
+}
+
 
 
 
@@ -514,14 +559,22 @@ hr {
     }
 
     .news-p {
-       font-size: 0.8rem;
-    
+        font-size: 0.8rem;
+
     }
-    
+
     .news-offer h3 {
         font-size: 1rem;
-        
+
     }
+    .footer-description{
+        font-size: 0.8rem;
+        padding: 10px 0;
+    }
+    .line{
+        margin: 15px 0;
+    }
+    
 
 
 }
